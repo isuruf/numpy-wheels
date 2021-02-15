@@ -60,6 +60,7 @@ jobs:
 
       - bash: |
           set -e
+          set -x
           echo $BUILD_COMMIT
           pip install virtualenv wheel
           BUILD_DEPENDS="$CYTHON_BUILD_DEP"
